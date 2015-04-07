@@ -1,0 +1,47 @@
+name: trade
+version: 0.0.1
+cabal-version: >=1.10
+build-type: Simple
+license: MIT
+license-file: LICENSE.md
+maintainer: Tony Day <tonyday567@gmail.com>
+bug-reports: https://github.com/tonyday567/trade/issues
+synopsis: Haskell project trade repo 
+description: <https://github.com/tonyday567/trade>
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:   Data.CBar
+                   , Data.TBar
+                   , Data.Trade
+                   , Data.Mark
+                   , Data.Tick
+     
+  build-depends:     base ==4.*
+                   , binary 
+                   , bytestring 
+                   , containers 
+                   , deepseq 
+                   , foldl-extended
+                   , foldl 
+                   , foldl-incremental 
+                   , formatting 
+                   , histogram-fill 
+                   , lens
+                   , mtl 
+                   , mvc
+                   , mvc-extended
+                   , pipes 
+                   , pipes-binary 
+                   , pipes-extended
+                   , semigroups 
+                   , sfold 
+                   , text 
+                   , text-binary 
+                   , time
+                   , time-extended
+                   , transformers
+
+  hs-source-dirs:    src      
+  default-language:  Haskell2010
